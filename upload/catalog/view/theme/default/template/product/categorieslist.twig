@@ -1,0 +1,49 @@
+{{header}}
+{{column_left}}
+{{ column_right }}
+
+
+{{title}}
+<br>
+
+<br/>
+{{meta_title}}
+<br>
+{{categories_text_from_controller}}
+
+<div class = "container">
+  <ul class = "breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+          <li><a href= "{{ breadcrumb.href }}">{{ breadcrumb.text}}</a></li>
+    {% endfor %}
+  </ul>
+
+
+
+  <div class="col-sm-12">
+    {% for category in categories %}
+      <div class="col-xs-12 text-center">
+        <a href="{{ category.href }}">
+          <img src="{{ category.image }}" alt="{{ category.name  }}" class = "img-responsive"/>
+        </a>
+        <h4><a href="{{ category.href }}"> {{ category.name  }}</a> 
+               </h4>
+      </div>
+      {% endfor%}
+  </div>
+
+
+  {{categories_text}} <br>
+  {{name}}
+
+</div>
+
+
+
+
+<br>
+{{meta_title}}
+<br>
+{{name}}
+
+{{footer}}
