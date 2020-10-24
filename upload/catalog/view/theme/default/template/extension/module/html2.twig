@@ -1,24 +1,19 @@
-<div>{% if heading_title %}
+<div>{% if link %}
 
   <h2>{{ heading_title }}</h2>
-  	<!--
- 	<h2>{{ link }}</h2>
-  	<h2>{{ beforename }}</h2>
+  	
+
+	<!-- this is without responsivety..
+		<p><iframe height="100%"   src="{{ link }}" frameborder="0" allowfullscreen=""></iframe></p>
 	-->
 
-  <p><iframe width="100%"  src="{{ link }}" frameborder="0" allowfullscreen=""></iframe></p>
-  <p><iframe width="100%"  src="{{ beforename }}" frameborder="0" allowfullscreen=""></iframe></p>
 
-
-	<!-- 
-  		<iframe width="560" height="315" src="https://www.youtube.com/embed/d89RHNQogO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	--> 
-
-
-	<!--  
- 		 <h2>{{ afterlink }}</h2>
-	-->
+	<div class="row">
+	<div class="col-xs-12 embed-responsive embed-responsive-16by9"><iframe src="{{ link }}" frameborder="0" allowfullscreen=""></iframe></div></div>
    
 
   {% endif %}
-  {{ html }}</div>
+  			<!--  if you wanna see description -->
+  {{ html }}
+
+  </div>

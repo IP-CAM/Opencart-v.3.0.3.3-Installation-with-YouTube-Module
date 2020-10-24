@@ -11,7 +11,7 @@ $_['text_edit']         = 'Edit HTML Content Module';
 $_['entry_name']        = 'Module Name';
 $_['entry_title']       = 'Heading Title';
 $_['entry_url']       = 'Youtube url:';
-$_['entry_url2']       = 'Youtube url2:';
+//$_['entry_url2']       = 'Youtube url2:';
 $_['entry_description'] = 'Description';
 $_['entry_status']      = 'Status';
 

@@ -132,27 +132,25 @@ class __TwigTemplate_991f20ebba3d12264dc5ea6a5d65c608e73584b6e0520ebe2d2ffb5cdf4
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 49
         echo "            </ul>
-<!-- Write your comments here -->
             <div class=\"tab-content\">";
-        // line 53
+        // line 51
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["languages"]) ? $context["languages"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["language"]) {
-            // line 54
+            // line 52
             echo "              <div class=\"tab-pane\" id=\"language";
             echo $this->getAttribute($context["language"], "language_id", array());
             echo "\">
                 <div class=\"form-group\">
- 
                   <label class=\"col-sm-2 control-label\" for=\"input-title";
-            // line 57
+            // line 54
             echo $this->getAttribute($context["language"], "language_id", array());
             echo "\">";
             echo (isset($context["entry_title"]) ? $context["entry_title"] : null);
             echo "</label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"module_description[";
-            // line 59
+            // line 56
             echo $this->getAttribute($context["language"], "language_id", array());
             echo "][title]\" placeholder=\"";
             echo (isset($context["entry_title"]) ? $context["entry_title"] : null);
@@ -163,19 +161,16 @@ class __TwigTemplate_991f20ebba3d12264dc5ea6a5d65c608e73584b6e0520ebe2d2ffb5cdf4
             echo "\" class=\"form-control\" />
                   </div>
                 </div>
-
 <!--  comments Youtube url:  -->
-
-  
                   <label class=\"col-sm-2 control-label\" for=\"input-link";
-            // line 66
+            // line 60
             echo $this->getAttribute($context["language"], "language_id", array());
             echo "\">";
             echo (isset($context["entry_url"]) ? $context["entry_url"] : null);
             echo "</label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"module_description[";
-            // line 68
+            // line 62
             echo $this->getAttribute($context["language"], "language_id", array());
             echo "][link]\" placeholder=\"";
             echo (isset($context["entry_url"]) ? $context["entry_url"] : null);
@@ -185,43 +180,18 @@ class __TwigTemplate_991f20ebba3d12264dc5ea6a5d65c608e73584b6e0520ebe2d2ffb5cdf4
             echo (($this->getAttribute((isset($context["module_description"]) ? $context["module_description"] : null), $this->getAttribute($context["language"], "language_id", array()), array(), "array")) ? ($this->getAttribute($this->getAttribute((isset($context["module_description"]) ? $context["module_description"] : null), $this->getAttribute($context["language"], "language_id", array()), array(), "array"), "link", array())) : (""));
             echo "\" class=\"form-control\" />
                   </div>
-                
+                  
 <!--  comments  -->
-
-<!--  prelink to setting page  -->
-      <label class=\"col-sm-2 control-label\" for=\"input-beforename";
-            // line 74
-            echo $this->getAttribute($context["language"], "language_id", array());
-            echo "\">";
-            echo (isset($context["entry_url2"]) ? $context["entry_url2"] : null);
-            echo "</label>
-                  <div class=\"col-sm-10\">
-                    <input type=\"text\" name=\"module_description[";
-            // line 76
-            echo $this->getAttribute($context["language"], "language_id", array());
-            echo "][beforename]\" placeholder=\"";
-            echo (isset($context["entry_url2"]) ? $context["entry_url2"] : null);
-            echo "\" id=\"input-heading";
-            echo $this->getAttribute($context["language"], "language_id", array());
-            echo "\" value=\"";
-            echo (($this->getAttribute((isset($context["module_description"]) ? $context["module_description"] : null), $this->getAttribute($context["language"], "language_id", array()), array(), "array")) ? ($this->getAttribute($this->getAttribute((isset($context["module_description"]) ? $context["module_description"] : null), $this->getAttribute($context["language"], "language_id", array()), array(), "array"), "beforename", array())) : (""));
-            echo "\" class=\"form-control\" />
-                  </div>
-<!--  prelink to setting page ending -->
-
-
-
-
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-description";
-            // line 84
+            // line 67
             echo $this->getAttribute($context["language"], "language_id", array());
             echo "\">";
             echo (isset($context["entry_description"]) ? $context["entry_description"] : null);
             echo "</label>
                   <div class=\"col-sm-10\">
                     <textarea name=\"module_description[";
-            // line 86
+            // line 69
             echo $this->getAttribute($context["language"], "language_id", array());
             echo "][description]\" placeholder=\"";
             echo (isset($context["entry_description"]) ? $context["entry_description"] : null);
@@ -230,46 +200,44 @@ class __TwigTemplate_991f20ebba3d12264dc5ea6a5d65c608e73584b6e0520ebe2d2ffb5cdf4
             echo "\" data-toggle=\"summernote\" class=\"form-control\">";
             echo (($this->getAttribute((isset($context["module_description"]) ? $context["module_description"] : null), $this->getAttribute($context["language"], "language_id", array()), array(), "array")) ? ($this->getAttribute($this->getAttribute((isset($context["module_description"]) ? $context["module_description"] : null), $this->getAttribute($context["language"], "language_id", array()), array(), "array"), "description", array())) : (""));
             echo "</textarea>
-                  </div>
-  
-<!-- Write your comments here <h1>h_______ende descript2?</h1> -->";
+                  </div>";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['language'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 92
+        // line 73
         echo "            </div>
           </div>
 
 <!-- Status form -->
 <div class=\"form-group\">
             <label class=\"col-sm-2 control-label\" for=\"input-status\">";
-        // line 97
+        // line 78
         echo (isset($context["entry_status"]) ? $context["entry_status"] : null);
         echo "</label>
             <div class=\"col-sm-10\">
               <select name=\"status\" id=\"input-status\" class=\"form-control\">";
-        // line 100
+        // line 81
         if ((isset($context["status"]) ? $context["status"] : null)) {
-            // line 101
+            // line 82
             echo "                <option value=\"1\" selected=\"selected\">";
             echo (isset($context["text_enabled"]) ? $context["text_enabled"] : null);
             echo "</option>
                 <option value=\"0\">";
-            // line 102
+            // line 83
             echo (isset($context["text_disabled"]) ? $context["text_disabled"] : null);
             echo "</option>";
         } else {
-            // line 104
+            // line 85
             echo "                <option value=\"1\">";
             echo (isset($context["text_enabled"]) ? $context["text_enabled"] : null);
             echo "</option>
                 <option value=\"0\" selected=\"selected\">";
-            // line 105
+            // line 86
             echo (isset($context["text_disabled"]) ? $context["text_disabled"] : null);
             echo "</option>";
         }
-        // line 107
+        // line 88
         echo "              </select>
             </div>
           </div>
@@ -291,7 +259,7 @@ class __TwigTemplate_991f20ebba3d12264dc5ea6a5d65c608e73584b6e0520ebe2d2ffb5cdf4
   <script type=\"text/javascript\"><!--
 \$('#language a:first').tab('show');
 //--></script></div>";
-        // line 129
+        // line 110
         echo (isset($context["footer"]) ? $context["footer"] : null);
         echo "
 
@@ -310,7 +278,7 @@ class __TwigTemplate_991f20ebba3d12264dc5ea6a5d65c608e73584b6e0520ebe2d2ffb5cdf4
 
     public function getDebugInfo()
     {
-        return array (  295 => 129,  273 => 107,  269 => 105,  264 => 104,  260 => 102,  255 => 101,  253 => 100,  248 => 97,  241 => 92,  225 => 86,  218 => 84,  201 => 76,  194 => 74,  179 => 68,  172 => 66,  156 => 59,  149 => 57,  142 => 54,  138 => 53,  134 => 49,  118 => 47,  114 => 46,  109 => 42,  104 => 40,  102 => 39,  97 => 38,  92 => 36,  87 => 34,  80 => 30,  75 => 27,  68 => 23,  66 => 22,  61 => 18,  51 => 16,  47 => 15,  42 => 12,  36 => 11,  32 => 10,  19 => 1,);
+        return array (  263 => 110,  241 => 88,  237 => 86,  232 => 85,  228 => 83,  223 => 82,  221 => 81,  216 => 78,  209 => 73,  195 => 69,  188 => 67,  174 => 62,  167 => 60,  154 => 56,  147 => 54,  141 => 52,  137 => 51,  134 => 49,  118 => 47,  114 => 46,  109 => 42,  104 => 40,  102 => 39,  97 => 38,  92 => 36,  87 => 34,  80 => 30,  75 => 27,  68 => 23,  66 => 22,  61 => 18,  51 => 16,  47 => 15,  42 => 12,  36 => 11,  32 => 10,  19 => 1,);
     }
 }
 /* {{ header }}{{ column_left }}*/
@@ -362,46 +330,27 @@ class __TwigTemplate_991f20ebba3d12264dc5ea6a5d65c608e73584b6e0520ebe2d2ffb5cdf4
 /*               <li><a href="#language{{ language.language_id }}" data-toggle="tab"><img src="language/{{ language.code }}/{{ language.code }}.png" title="{{ language.name }}" /> {{ language.name }}</a></li>*/
 /*               {% endfor %}*/
 /*             </ul>*/
-/* <!-- Write your comments here -->*/
 /*             <div class="tab-content">*/
-/* */
 /*               {% for language in languages %}*/
 /*               <div class="tab-pane" id="language{{ language.language_id }}">*/
 /*                 <div class="form-group">*/
-/*  */
 /*                   <label class="col-sm-2 control-label" for="input-title{{ language.language_id }}">{{ entry_title }}</label>*/
 /*                   <div class="col-sm-10">*/
 /*                     <input type="text" name="module_description[{{ language.language_id }}][title]" placeholder="{{ entry_title }}" id="input-heading{{ language.language_id }}" value="{{ module_description[language.language_id] ? module_description[language.language_id].title }}" class="form-control" />*/
 /*                   </div>*/
 /*                 </div>*/
-/* */
 /* <!--  comments Youtube url:  -->*/
-/* */
-/*   */
 /*                   <label class="col-sm-2 control-label" for="input-link{{ language.language_id }}">{{ entry_url }}</label>*/
 /*                   <div class="col-sm-10">*/
 /*                     <input type="text" name="module_description[{{ language.language_id }}][link]" placeholder="{{ entry_url }}" id="input-heading{{ language.language_id }}" value="{{ module_description[language.language_id] ? module_description[language.language_id].link }}" class="form-control" />*/
 /*                   </div>*/
-/*                 */
+/*                   */
 /* <!--  comments  -->*/
-/* */
-/* <!--  prelink to setting page  -->*/
-/*       <label class="col-sm-2 control-label" for="input-beforename{{ language.language_id }}">{{ entry_url2 }}</label>*/
-/*                   <div class="col-sm-10">*/
-/*                     <input type="text" name="module_description[{{ language.language_id }}][beforename]" placeholder="{{ entry_url2 }}" id="input-heading{{ language.language_id }}" value="{{ module_description[language.language_id] ? module_description[language.language_id].beforename }}" class="form-control" />*/
-/*                   </div>*/
-/* <!--  prelink to setting page ending -->*/
-/* */
-/* */
-/* */
-/* */
 /*                 <div class="form-group">*/
 /*                   <label class="col-sm-2 control-label" for="input-description{{ language.language_id }}">{{ entry_description }}</label>*/
 /*                   <div class="col-sm-10">*/
 /*                     <textarea name="module_description[{{ language.language_id }}][description]" placeholder="{{ entry_description }}" id="input-description{{ language.language_id }}" data-toggle="summernote" class="form-control">{{ module_description[language.language_id] ? module_description[language.language_id].description }}</textarea>*/
 /*                   </div>*/
-/*   */
-/* <!-- Write your comments here <h1>h_______ende descript2?</h1> -->*/
 /*                  */
 /*               {% endfor %}*/
 /*             </div>*/

@@ -9377,3 +9377,55 @@
 2020-10-14 23:28:12 - PHP Notice:  Undefined index: afterlink in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\extension\module\html2.php on line 12
 2020-10-14 23:47:49 - PHP Notice:  Undefined index: beforename in C:\xampp\htdocs\opencart-3.0.3.3\upload\admin\controller\extension\module\html2.php on line 110
 2020-10-15 19:09:56 - PHP Notice:  Undefined index: afterlink in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\extension\module\html2.php on line 12
+2020-10-24 14:12:41 - PHP Notice:  Undefined index: beforename in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\extension\module\html2.php on line 10
+2020-10-24 14:13:21 - PHP Notice:  Undefined index: beforename in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\extension\module\html2.php on line 10
+2020-10-24 14:14:35 - PHP Notice:  Undefined index: beforename in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\extension\module\html2.php on line 10
+2020-10-24 14:15:04 - PHP Notice:  Undefined index: beforename in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\extension\module\html2.php on line 10
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 303
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 303
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 303
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 303
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 303
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 303
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 303
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 328
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 334
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 340
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 346
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 352
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 359
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 365
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 372
+2020-10-24 17:05:45 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 378
+2020-10-24 17:05:45 - PHP Notice:  Undefined variable: product_total in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 430
+2020-10-24 17:05:45 - PHP Notice:  Undefined variable: product_total in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 438
+2020-10-24 17:05:45 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 438
+2020-10-24 17:05:45 - PHP Notice:  Undefined variable: product_total in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 438
+2020-10-24 17:05:45 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 438
+2020-10-24 17:05:45 - PHP Notice:  Undefined variable: product_total in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 438
+2020-10-24 17:05:45 - PHP Notice:  Undefined variable: product_total in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 438
+2020-10-24 17:05:45 - PHP Notice:  Undefined variable: product_total in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 451
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 303
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 303
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 303
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 303
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 303
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 303
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 303
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 328
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 334
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 340
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 346
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 352
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 359
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 365
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 372
+2020-10-24 17:15:16 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 378
+2020-10-24 17:15:16 - PHP Notice:  Undefined variable: product_total in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 430
+2020-10-24 17:15:16 - PHP Notice:  Undefined variable: product_total in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 438
+2020-10-24 17:15:16 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 438
+2020-10-24 17:15:16 - PHP Notice:  Undefined variable: product_total in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 438
+2020-10-24 17:15:16 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 438
+2020-10-24 17:15:16 - PHP Notice:  Undefined variable: product_total in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 438
+2020-10-24 17:15:16 - PHP Notice:  Undefined variable: product_total in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 438
+2020-10-24 17:15:16 - PHP Notice:  Undefined variable: product_total in C:\xampp\htdocs\opencart-3.0.3.3\upload\catalog\controller\product\categoryLower.php on line 451
