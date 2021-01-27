@@ -38,6 +38,11 @@ class ControllerCatalogProduct extends Controller {
 				$url .= '&filter_price=' . $this->request->get['filter_price'];
 			}
 
+			if (isset($this->request->get['filter_cpc_h'])) {
+				$url .= '&filter_cpc_h=' . $this->request->get['filter_cpc_h'];
+			}
+
+
 			if (isset($this->request->get['filter_quantity'])) {
 				$url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
 			}
@@ -88,6 +93,10 @@ class ControllerCatalogProduct extends Controller {
 
 			if (isset($this->request->get['filter_warranty'])) {
 				$url .= '&filter_warranty=' . $this->request->get['filter_warranty'];
+			}
+
+			if (isset($this->request->get['filter_cpc_h'])) {
+				$url .= '&filter_cpc_h=' . $this->request->get['filter_cpc_h'];
 			}
 
 			if (isset($this->request->get['filter_price'])) {
@@ -148,6 +157,10 @@ class ControllerCatalogProduct extends Controller {
 				$url .= '&filter_price=' . $this->request->get['filter_price'];
 			}
 
+			if (isset($this->request->get['filter_cpc_h'])) {
+				$url .= '&filter_cpc_h=' . $this->request->get['filter_cpc_h'];
+			}
+
 			if (isset($this->request->get['filter_quantity'])) {
 				$url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
 			}
@@ -202,6 +215,11 @@ class ControllerCatalogProduct extends Controller {
 				$url .= '&filter_price=' . $this->request->get['filter_price'];
 			}
 
+			if (isset($this->request->get['filter_cpc_h'])) {
+				$url .= '&filter_cpc_h=' . $this->request->get['filter_cpc_h'];
+			}
+
+
 			if (isset($this->request->get['filter_quantity'])) {
 				$url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
 			}
@@ -245,6 +263,14 @@ class ControllerCatalogProduct extends Controller {
 			$filter_price = $this->request->get['filter_price'];
 		} else {
 			$filter_price = '';
+		}
+
+		if (isset($this->request->get['filter_cpc_h'])) {
+			$filter_cpc_h = $this->request->get['filter_cpc_h'];
+			$filter_cpc_h = number_format($filter_cpc_h, 2, '.', '');
+			//$filter_cpc_h = (string)$filter_cpc_h;
+		} else {
+			$filter_cpc_h = '';
 		}
 
 		if (isset($this->request->get['filter_quantity'])) {
@@ -291,6 +317,10 @@ class ControllerCatalogProduct extends Controller {
 			$url .= '&filter_price=' . $this->request->get['filter_price'];
 		}
 
+		if (isset($this->request->get['filter_cpc_h'])) {
+			$url .= '&filter_cpc_h=' . $this->request->get['filter_cpc_h'];
+		}
+
 		if (isset($this->request->get['filter_quantity'])) {
 			$url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
 		}
@@ -329,6 +359,9 @@ class ControllerCatalogProduct extends Controller {
 			'filter_name'	  => $filter_name,
 			'filter_model'	  => $filter_model,
 			'filter_price'	  => $filter_price,
+			//'cpc_h'      =>number_format($result['cpc_h'], 2, '.', ''),
+			//'filter_cpc_h'	  => number_format((int)$filter_cpc_h, 2, '.', ''),
+			'filter_cpc_h'	  => $filter_cpc_h,
 			'filter_quantity' => $filter_quantity,
 			'filter_status'   => $filter_status,
 			'sort'            => $sort,
@@ -361,13 +394,14 @@ class ControllerCatalogProduct extends Controller {
 					break;
 				}
 			}
-
+//data v zobrazovaci
 			$data['products'][] = array(
 				'product_id' => $result['product_id'],
 				'image'      => $image,
 				'name'       => $result['name'],
 				'model'      => $result['model'],
 				'price'      => $this->currency->format($result['price'], $this->config->get('config_currency')),
+				'cpc_h'      => $this->currency->format($result['cpc_h'], $this->config->get('config_currency')),
 				'special'    => $special,
 				'quantity'   => $result['quantity'],
 				'status'     => $result['status'] ? $this->language->get('text_enabled') : $this->language->get('text_disabled'),
@@ -411,6 +445,10 @@ class ControllerCatalogProduct extends Controller {
 			$url .= '&filter_price=' . $this->request->get['filter_price'];
 		}
 
+		if (isset($this->request->get['filter_cpc_h'])) {
+			$url .= '&filter_cpc_h=' . $this->request->get['filter_cpc_h'];
+		}
+
 		if (isset($this->request->get['filter_quantity'])) {
 			$url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
 		}
@@ -432,6 +470,7 @@ class ControllerCatalogProduct extends Controller {
 		$data['sort_name'] = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token'] . '&sort=pd.name' . $url, true);
 		$data['sort_model'] = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token'] . '&sort=p.model' . $url, true);
 		$data['sort_price'] = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token'] . '&sort=p.price' . $url, true);
+		$data['sort_cpc_h'] = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token'] . '&sort=p.cpc_h' . $url, true);
 		$data['sort_quantity'] = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token'] . '&sort=p.quantity' . $url, true);
 		$data['sort_status'] = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token'] . '&sort=p.status' . $url, true);
 		$data['sort_order'] = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token'] . '&sort=p.sort_order' . $url, true);
@@ -448,6 +487,10 @@ class ControllerCatalogProduct extends Controller {
 
 		if (isset($this->request->get['filter_price'])) {
 			$url .= '&filter_price=' . $this->request->get['filter_price'];
+		}
+
+		if (isset($this->request->get['filter_cpc_h'])) {
+			$url .= '&filter_cpc_h=' . $this->request->get['filter_cpc_h'];
 		}
 
 		if (isset($this->request->get['filter_quantity'])) {
@@ -479,6 +522,7 @@ class ControllerCatalogProduct extends Controller {
 		$data['filter_name'] = $filter_name;
 		$data['filter_model'] = $filter_model;
 		$data['filter_price'] = $filter_price;
+		$data['filter_cpc_h'] = $filter_cpc_h;
 		$data['filter_quantity'] = $filter_quantity;
 		$data['filter_status'] = $filter_status;
 
@@ -537,6 +581,10 @@ class ControllerCatalogProduct extends Controller {
 
 		if (isset($this->request->get['filter_price'])) {
 			$url .= '&filter_price=' . $this->request->get['filter_price'];
+		}
+		
+		if (isset($this->request->get['filter_cpc_h'])) {
+			$url .= '&filter_cpc_h=' . $this->request->get['filter_cpc_h'];
 		}
 
 		if (isset($this->request->get['filter_quantity'])) {
@@ -619,6 +667,14 @@ class ControllerCatalogProduct extends Controller {
 			$data['warranty'] = $product_info['warranty'];
 		} else {
 			$data['warranty'] = '';
+		}
+
+		if (isset($this->request->post['cpc_h'])) {
+			$data['cpc_h'] = $this->request->post['cpc_h'];
+		} elseif (!empty($product_info)) {
+			$data['cpc_h'] = $product_info['cpc_h'];
+		} else {
+			$data['cpc_h'] = '';
 		}
 
 		if (isset($this->request->post['upc'])) {

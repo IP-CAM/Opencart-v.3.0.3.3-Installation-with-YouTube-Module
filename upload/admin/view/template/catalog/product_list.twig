@@ -45,6 +45,11 @@
               <label class="control-label" for="input-price">{{ entry_price }}</label>
               <input type="text" name="filter_price" value="{{ filter_price }}" placeholder="{{ entry_price }}" id="input-price" class="form-control" />
             </div>
+ <!-- this is inside filter -->         
+            <div class="form-group">
+              <label class="control-label" for="input-cpc_h">{{ entry_cpc_h }}</label>
+              <input type="text" name="filter_cpc_h" value="{{ filter_cpc_h }}" placeholder="{{ entry_cpc_h }}" id="input-cpc_h" class="form-control" />
+            </div>
             <div class="form-group">
               <label class="control-label" for="input-quantity">{{ entry_quantity }}</label>
               <input type="text" name="filter_quantity" value="{{ filter_quantity }}" placeholder="{{ entry_quantity }}" id="input-quantity" class="form-control" />
@@ -147,7 +152,13 @@
                       <td class="text-center">{{ column_image }}</td>
                       <td class="text-left">{% if sort == 'pd.name' %} <a href="{{ sort_name }}" class="{{ order|lower }}">{{ column_name }}</a> {% else %} <a href="{{ sort_name }}">{{ column_name }}</a> {% endif %}</td>
                       <td class="text-left">{% if sort == 'p.model' %} <a href="{{ sort_model }}" class="{{ order|lower }}">{{ column_model }}</a> {% else %} <a href="{{ sort_model }}">{{ column_model }}</a> {% endif %}</td>
+
+
+
                       <td class="text-right">{% if sort == 'p.price' %} <a href="{{ sort_price }}" class="{{ order|lower }}">{{ column_price }}</a> {% else %} <a href="{{ sort_price }}">{{ column_price }}</a> {% endif %}</td>
+<!-- Nazov column Heureka cost per click -->
+                      <td class="text-right">{% if sort == 'p.cpc_h' %} <a href="{{ sort_cpc_h }}" class="{{ order|lower }}">{{ column_cpc_h }}</a> {% else %} <a href="{{ sort_cpc_h }}">{{ column_cpc_h }}</a> {% endif %}</td>
+
                       <td class="text-right">{% if sort == 'p.quantity' %} <a href="{{ sort_quantity }}" class="{{ order|lower }}">{{ column_quantity }}</a> {% else %} <a href="{{ sort_quantity }}">{{ column_quantity }}</a> {% endif %}</td>
                       <td class="text-left">{% if sort == 'p.status' %} <a href="{{ sort_status }}" class="{{ order|lower }}">{{ column_status }}</a> {% else %} <a href="{{ sort_status }}">{{ column_status }}</a> {% endif %}</td>
                       <td class="text-right">{{ column_action }}</td>
@@ -163,7 +174,9 @@
                       {% else %}
                       <input type="checkbox" name="selected[]" value="{{ product.product_id }}" />
                       {% endif %}</td>
-                    <td class="text-center">{% if product.image %} <img src="{{ product.image }}" alt="{{ product.name }}" class="img-thumbnail" /> {% else %} <span class="img-thumbnail list"><i class="fa fa-camera fa-2x"></i></span> {% endif %}</td>
+                    <td class="text-center">{% if product.image %}
+
+                     <img src="{{ product.image }}" alt="{{ product.name }}" class="img-thumbnail" /> {% else %} <span class="img-thumbnail list"><i class="fa fa-camera fa-2x"></i></span> {% endif %}</td>
                     <td class="text-left">{{ product.name }}</td>
                     <td class="text-left">{{ product.model }}</td>
                     <td class="text-right">{% if product.special %} <span style="text-decoration: line-through;">{{ product.price }}</span><br/>
@@ -171,6 +184,9 @@
                       {% else %}
                       {{ product.price }}
                       {% endif %}</td>
+
+                    <td class="text-right">{{ product.cpc_h }}</td>
+
                     <td class="text-right">{% if product.quantity <= 0 %} <span class="label label-warning">{{ product.quantity }}</span> {% elseif product.quantity <= 5 %} <span class="label label-danger">{{ product.quantity }}</span> {% else %} <span class="label label-success">{{ product.quantity }}</span> {% endif %}</td>
                     <td class="text-left">{{ product.status }}</td>
                     <td class="text-right"><a href="{{ product.edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>
@@ -216,6 +232,14 @@ $('#button-filter').on('click', function() {
 	if (filter_price) {
 		url += '&filter_price=' + encodeURIComponent(filter_price);
 	}
+
+    var filter_cpc_h = $('input[name=\'filter_cpc_h\']').val();
+
+  if (filter_cpc_h) {
+    url += '&filter_cpc_h=' + encodeURIComponent(filter_cpc_h);
+  }
+
+  
 
 	var filter_quantity = $('input[name=\'filter_quantity\']').val();
 
